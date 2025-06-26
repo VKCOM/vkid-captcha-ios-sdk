@@ -24,18 +24,17 @@ Cocopods – 1.13 и выше.
   
 ##  Установка
   
-1. Добавьте библиотеку VKCaptchaSDK как таргет в ваш Package.swift:
+1. Добавьте библиотеку VKCaptchaSDK в зависимости в ваш Package.swift:
   
 ```swift
-.binaryTarget(
-    name: "VKCaptchaSDK",
-    url: "https://artifactory-external.vkpartner.ru/artifactory/vk-id-captcha/ios/VKCaptchaSDK-0.1.0.tar.gz"
-)
+    dependencies: [
+        .package(url: "https://github.com/VKCOM/vkid-captcha-ios-sdk", .upToNextMajor(from: "0.1.0"))
+    ]
 ```
   
 Или добавьте в ваш проект [библиотеку](https://github.com/VKCOM/vkid-captcha-ios-sdk).
   
-2. Скачайте и распакуйте .tar.gz архив по [ссылке](https://artifactory-external.vkpartner.ru/artifactory/vk-id-captcha/ios/VKCaptchaSDK-0.1.0.tar.gz).
+2. Скачайте и распакуйте .zip архив по [ссылке](https://artifactory-external.vkpartner.ru/artifactory/vk-id-captcha/ios/VKCaptcha-0.1.0/VKCaptchaSDK.zip).
 3. Добавьте в ваш проект распакованный файл VKCaptchaSDKResources.bundle.
   
   
